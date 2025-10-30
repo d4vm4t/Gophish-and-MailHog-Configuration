@@ -1,0 +1,1 @@
+# Gophish-and-MailHog-Configuration
