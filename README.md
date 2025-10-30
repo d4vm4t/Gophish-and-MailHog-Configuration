@@ -1,4 +1,4 @@
-# Gophishand MailHog Configuration
+# Gophish and MailHog Configuration
 
 ## Requisitos previos
 
