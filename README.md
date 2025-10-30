@@ -24,7 +24,7 @@
 sudo mkdir /opt/gophish
 ```
 
-4. Copia el archivo ZIP descargado a `/opt/gophish` y descomprímelo:
+3. Copia el archivo ZIP descargado a `/opt/gophish` y descomprímelo:
 ```
 unzip gophish-v0.8.0-linux-64bit.zip
 ```
@@ -36,7 +36,7 @@ unzip gophish-v0.8.0-linux-64bit.zip
 ./gophish
 ```
 
-3. Al iniciarse, Gophish suele levantar la interfaz administrativa en `https://localhost:3333`. La primera vez te pedirá que cambies la contraseña por defecto.
+2. Al iniciarse, Gophish suele levantar la interfaz administrativa en `https://localhost:3333`. La primera vez te pedirá que cambies la contraseña por defecto.
 
 ---
 
@@ -49,10 +49,13 @@ unzip gophish-v0.8.0-linux-64bit.zip
     
 2. Crea una carpeta y coloca el binario allí:
 ```
-sudo mkdir /opt/mailhog mv ~/Descargas/MailHog_linux_amd64 /opt/mailhog/MailHog cd /opt/mailhog chmod +x MailHog
+sudo mkdir /opt/mailhog
+mv ~/Descargas/MailHog_linux_amd64 /opt/mailhog/MailHog
+cd /opt/mailhog
+chmod +x MailHog
 ```
 
-4. Ejecuta MailHog:
+3. Ejecuta MailHog:
 ```
 ./MailHog
 ```
@@ -91,13 +94,13 @@ Serving under http://0.0.0.0:8025/`
 
 ### 2. Configurar la plantilla de correo (Email Templates)
 - En Gophish selecciona **Email Templates** → **New Template**.
-- Crea el HTML/texto del correo que se enviará. 
+- Crea el HTML/texto del correo que se enviará.
+  
 ### 3. Crear la landing page (Landing Pages)
 - En el menú elige **Landing Pages** → **New Landing Page**.
 - Añade la página que quieres que se muestre cuando el usuario haga click en el enlace del correo.
 
 ### 4. Crear usuarios / grupos (Users & Groups)
-
 - En **Users & Groups** crea un _Group_ con una lista de usuarios a los cuales se les mandará el email.
 - Cada usuario puede tener campos personalizados (FirstName, LastName, Email, etc.) que puedes usar en plantillas.
 
@@ -110,7 +113,6 @@ Serving under http://0.0.0.0:8025/`
 - Lanza la campaña.
 - Comprueba MailHog (`http://localhost:8025`) para ver los correos enviados.
 - Verifica en Gophish las métricas de la campaña (opens, clicks, etc.).
-
 
 ---
 ## Recursos / enlaces
